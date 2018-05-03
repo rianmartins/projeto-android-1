@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">GasUp</string>
+    <string name="login_btn">Entrar</string>
+    <string name="cadastro_btn">Cadastre-se Agora</string>
+    <string name="cadastrar_btn">Cadastrar</string>
+
+    <string name="settings">Configuracoes</string>
+    <string name="logout">Sair</string>
+    <string name="order_local">Ordenar por proximidade</string>
+    <string name="order_price">Ordenar por preço</string>
+
+    <string name="local_label">Perto de mim</string>
+    <string name="price_label">Mais baratos</string>
+
+    <string name="descr_overflow_button">Ordenar</string>
+
+    <string name="btn_iniciarNav">IR!</string>
+</resources>

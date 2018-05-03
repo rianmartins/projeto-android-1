@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingTop="15dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp">
+
+    <ImageView
+        android:id="@+id/bandeiraLogoImg"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/br_logo"
+        android:layout_marginTop="10dp"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"/>
+
+    <TextView
+        android:id="@+id/headerNomePosto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textColor="@color/colorPrimary"
+        android:text="Nome do Posto"
+        android:layout_marginLeft="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bodyEndereco"
+        android:text="Rua do Endereço, num 22"
+        android:textSize="15dp"
+        android:layout_marginLeft="50dp"
+        android:layout_below="@+id/headerNomePosto"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/precoPrioritario"
+        android:textColor="@color/precoComb"
+        android:textStyle="bold"
+        android:paddingLeft="12dp"
+        android:text="R$ 4,23"
+        android:textSize="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignBaseline="@+id/headerNomePosto"/>
+
+
+</RelativeLayout>

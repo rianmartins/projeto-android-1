@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="15dp"
+    android:paddingLeft="15dp"
+    android:orientation="vertical"
+    tools:context="com.rianmartins.android1_project.Configuracoes">
+
+    <TextView
+        android:id="@+id/pageLabel"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:textSize="35dp"
+        android:text="Configurações" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp">
+
+
+        <TextView
+            android:id="@+id/distancia_config_label"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Distância Máxima:" />
+
+        <Spinner
+            android:id="@+id/spinnerMaxDist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:width="100dp"
+            android:layout_alignBaseline="@+id/distancia_config_label"
+            android:layout_alignParentRight="true"/>
+
+        <!--<EditText-->
+            <!--android:id="@+id/distancia_config_value"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:width="100dp"-->
+            <!--android:layout_alignBaseline="@+id/distancia_config_label"-->
+            <!--android:layout_alignParentRight="true"/>-->
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/combustivel_pref_config_label"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Combustível:" />
+
+        <Spinner
+            android:id="@+id/spinnerCombustivelPref"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            android:width="100dp"
+            android:layout_alignBaseline="@+id/combustivel_pref_config_label"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:id="@+id/notificacoes_config_label"
+            android:textColor="@color/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Notificações:" />
+
+        <ToggleButton
+            android:id="@+id/toggle_notificacoes_config"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ativar Notificações"
+            android:onClick="onToggleNotificacoes"
+            android:layout_alignBaseline="@+id/notificacoes_config_label"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+
+</android.widget.LinearLayout>
